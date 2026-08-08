@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summit Build Solutions | Construction & Remodeling</title>
+<meta name="description" content="Summit Build Solutions provides professional construction, roofing, remodeling and masonry services. Request a free estimate today.">
+<style>
+:root{--navy:#10253f;--blue:#1d5fa7;--gold:#f3b62d;--light:#f5f7fa;--text:#253247;--muted:#64748b;--white:#fff;--shadow:0 14px 35px rgba(16,37,63,.10);--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:100;background:rgba(16,37,63,.97);color:#fff;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:1.25rem;font-weight:800;letter-spacing:.3px}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:24px;align-items:center}
+nav a{font-weight:600;color:#e8eef6}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#17263a;padding:12px 19px;border-radius:9px;font-weight:800}
+.hero{min-height:640px;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(90deg,rgba(8,25,44,.86),rgba(8,25,44,.48)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:820px;padding:70px 0}
+.hero h1{font-size:clamp(2.4rem,6vw,4.8rem);line-height:1.05;margin-bottom:20px}
+.hero p{font-size:1.15rem;color:#e6edf5;margin-bottom:30px}
+.hero .btn{font-size:1.05rem;padding:15px 25px}
+section{padding:85px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 45px}
+.section-head h2{font-size:2.25rem;color:var(--navy);margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;padding:30px;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e8edf3}
+.card h3{color:var(--navy);margin:10px 0 8px}
+.card p{color:var(--muted)}
+.icon{font-size:2rem}
+.stats{background:var(--navy);color:#fff;padding:55px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:20px}
+.stats h2{font-size:2.4rem;color:var(--gold)}
+.stats p{color:#d8e1ec}
+.projects{background:var(--light)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.project{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.project img{width:100%;height:220px;object-fit:cover;display:block}
+.project div{padding:20px}
+.project h3{color:var(--navy)}
+.why{background:#fff}
+.testimonials{background:var(--light)}
+.quote{font-size:2rem;color:var(--gold);letter-spacing:2px}
+.cta{background:linear-gradient(120deg,var(--blue),var(--navy));color:#fff;text-align:center}
+.cta h2{font-size:2.4rem;margin-bottom:12px}
+.cta p{max-width:650px;margin:0 auto 25px;color:#e4edf7}
+.contact{background:var(--light)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}
+.contact-info h2{color:var(--navy);font-size:2rem;margin-bottom:12px}
+.contact-info p{color:var(--muted);margin-bottom:20px}
+.info-box{background:#fff;padding:18px;border-radius:12px;margin:12px 0;box-shadow:var(--shadow)}
+form{background:#fff;padding:28px;border-radius:var(--radius);box-shadow:var(--shadow)}
+input,textarea{width:100%;padding:14px 15px;border:1px solid #d6dde7;border-radius:9px;margin-bottom:14px;font:inherit}
+textarea{min-height:140px;resize:vertical}
+button{border:0;cursor:pointer;background:var(--blue);color:#fff;padding:14px 22px;border-radius:9px;font-weight:800;font-size:1rem}
+footer{background:#091a2d;color:#cbd6e3;padding:45px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px;margin-bottom:30px}
+footer h3{color:#fff;margin-bottom:10px}
+footer a:hover{color:var(--gold)}
+.copyright{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center;font-size:.9rem}
+@media(max-width:800px){
+nav{display:none}.cards,.gallery{grid-template-columns:1fr}.stats-grid{grid-template-columns:repeat(2,1fr)}
+.contact-grid,.footer-grid{grid-template-columns:1fr}.hero{min-height:570px}
+section{padding:65px 0}.hero h1{font-size:2.8rem}
+}
+@media(max-width:480px){.stats-grid{grid-template-columns:1fr 1fr}.logo{font-size:1.05rem}.hero h1{font-size:2.35rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">Summit <span>Build Solutions</span></a>
+    <nav>
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Free Estimate</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <h1>Building Strong Foundations for the Future</h1>
+    <p>Professional construction, roofing, remodeling and masonry services delivered with quality craftsmanship.</p>
+    <a class="btn" href="#contact">Get Your Free Estimate</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><h2>Our Services</h2><p>Reliable construction solutions for homes and commercial properties.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">🏠</div><h3>Building Construction</h3><p>Professional construction solutions for residential and commercial projects.</p></article>
+      <article class="card"><div class="icon">🏗️</div><h3>Home Remodeling</h3><p>Kitchen, bathroom and whole-home renovations designed around your needs.</p></article>
+      <article class="card"><div class="icon">🏠</div><h3>Roofing</h3><p>Dependable roof installation, replacement and repair services.</p></article>
+      <article class="card"><div class="icon">🧱</div><h3>Masonry</h3><p>Quality brickwork, stonework and exterior masonry projects.</p></article>
+      <article class="card"><div class="icon">🔧</div><h3>Repairs</h3><p>Practical repair and maintenance solutions to keep your property in great shape.</p></article>
+      <article class="card"><div class="icon">📐</div><h3>Project Planning</h3><p>Clear communication and organized project delivery from start to finish.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div><h2>15+</h2><p>Years Experience</p></div><div><h2>500+</h2><p>Projects Completed</p></div><div><h2>98%</h2><p>Customer Satisfaction</p></div><div><h2>24/7</h2><p>Emergency Service</p></div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-head"><h2>Recent Projects</h2><p>A look at the quality and craftsmanship we bring to every project.</p></div>
+    <div class="gallery">
+      <article class="project"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85" alt="Custom home construction"><div><h3>Custom Home Build</h3></div></article>
+      <article class="project"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85" alt="Construction project"><div><h3>Commercial Construction</h3></div></article>
+      <article class="project"><img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1000&q=85" alt="Renovation project"><div><h3>Kitchen Renovation</h3></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="about">
+  <div class="container">
+    <div class="section-head"><h2>Why Choose Summit Build Solutions?</h2><p>We combine experienced professionals, dependable service and attention to detail.</p></div>
+    <div class="cards">
+      <article class="card"><h3>Licensed &amp; Insured</h3><p>Your project is handled professionally with care and accountability.</p></article>
+      <article class="card"><h3>Experienced Team</h3><p>Skilled professionals focused on quality workmanship and customer satisfaction.</p></article>
+      <article class="card"><h3>On-Time Delivery</h3><p>We work efficiently and communicate clearly throughout the project.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head"><h2>What Our Clients Say</h2></div>
+    <div class="cards">
+      <article class="card"><div class="quote">★★★★★</div><p>"Outstanding workmanship! Our new roof looks amazing."</p><strong>— Michael R.</strong></article>
+      <article class="card"><div class="quote">★★★★★</div><p>"Professional team, fair pricing, and finished on schedule."</p><strong>— Sarah T.</strong></article>
+      <article class="card"><div class="quote">★★★★★</div><p>"I would definitely hire Summit Build Solutions again."</p><strong>— David L.</strong></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container"><h2>Ready to Start Your Project?</h2><p>Tell us what you're planning and we'll help you take the next step.</p><a class="btn" href="#contact">Request a Free Estimate</a></div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h2>Let's Build Something Great</h2>
+      <p>Have a construction, roofing or remodeling project in mind? Send us the details and our team can get back to you.</p>
+      <div class="info-box"><strong>📞 Phone</strong><br>Replace with your business phone</div>
+      <div class="info-box"><strong>✉️ Email</strong><br>Replace with your business email</div>
+      <div class="info-box"><strong>📍 Service Area</strong><br>Replace with your business location</div>
+    </div>
+    <form onsubmit="event.preventDefault(); alert('Thanks! Please connect this form to your preferred email service before launch.');">
+      <h3 style="color:#10253f;margin-bottom:18px;font-size:1.5rem">Request a Quote</h3>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number">
+      <textarea placeholder="Tell us about your project" required></textarea>
+      <button type="submit">Request Quote</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3>Summit Build Solutions</h3><p>Quality construction, roofing, remodeling and masonry services.</p></div>
+      <div><h3>Quick Links</h3><p><a href="#services">Services</a><br><a href="#projects">Projects</a><br><a href="#contact">Contact</a></p></div>
+      <div><h3>Get Started</h3><p><a href="#contact">Request a Free Estimate</a></p></div>
+    </div>
+    <div class="copyright">© 2026 Summit Build Solutions. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
